@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/dim_12dp"
+    tools:context=".view.fragment.homeCycle.client.ClientOfferDetailsFragment">
+
+    <TextView
+        android:id="@+id/client_offer_details_fragment_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/blue"
+        android:text="@string/offer_details"
+        android:textSize="@dimen/dim_24sp"
+        android:textStyle="bold"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_12dp"
+        android:backgroundTint="@color/gray"
+        android:layout_below="@id/client_offer_details_fragment_tv_title"
+        app:contentPadding="@dimen/dim_12dp"
+        app:cardCornerRadius="@dimen/dim_12dp"
+        app:cardElevation="@dimen/dim_8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/client_offer_details_fragment_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_blue"
+                android:textSize="@dimen/dim_16sp"
+                android:layout_centerHorizontal="true"
+                tools:text="new offer"/>
+
+            <TextView
+                android:id="@+id/client_offer_details_fragment_tv_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_blue"
+                android:textSize="@dimen/dim_16sp"
+                android:layout_marginTop="@dimen/dim_12dp"
+                android:layout_below="@id/client_offer_details_fragment_tv_name"
+                android:layout_centerHorizontal="true"
+                tools:text="new offer details" />
+
+            <LinearLayout
+                android:id="@+id/client_offer_details_fragment_ll_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_12dp"
+                android:orientation="horizontal"
+                android:layout_below="@id/client_offer_details_fragment_tv_details"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/from"
+                    android:textColor="@color/blue"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "/>
+
+                <TextView
+                    android:id="@+id/client_offer_details_fragment_tv_from_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue"
+                    tools:text="2-9-2019"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/client_offer_details_fragment_ll_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_12dp"
+                android:orientation="horizontal"
+                android:layout_below="@id/client_offer_details_fragment_ll_from"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/to"
+                    android:textColor="@color/blue"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "/>
+
+                <TextView
+                    android:id="@+id/client_offer_details_fragment_tv_to_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue"
+                    tools:text="2-9-2019"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/client_offer_details_fragment_btn_get_it_now"
+                android:layout_width="@dimen/dim_200dp"
+                android:layout_height="@dimen/dim_40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dim_16dp"
+                android:layout_marginBottom="@dimen/dim_16dp"
+                android:background="@drawable/shape_button"
+                android:text="@string/get_it_now"
+                android:textColor="@color/white"
+                android:layout_below="@id/client_offer_details_fragment_ll_to"/>
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

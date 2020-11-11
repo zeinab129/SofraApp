@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/food_category_item">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/food_category_item_iv_image"
+        android:layout_width="@dimen/dim_60dp"
+        android:layout_height="@dimen/dim_60dp"
+        android:layout_margin="@dimen/dim_12dp"
+        tools:src="@drawable/kfc" />
+
+    <TextView
+        android:id="@+id/food_category_item_tv_name"
+        android:layout_below="@id/food_category_item_iv_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        tools:text="Pizza"/>
+
+</RelativeLayout>

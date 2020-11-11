@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dim_12dp"
+    tools:context=".view.fragment.homeCycle.client.CartItemsListFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/dim_8dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/cart_items_list_fragment_rv_list"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/cart_items_list_fragment_tv_total_cost_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_12dp"
+                android:text="@string/total_cost"
+                android:textSize="@dimen/dim_24sp"
+                android:textColor="@color/blue"
+                app:layout_constraintTop_toBottomOf="@id/cart_items_list_fragment_rv_list"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/cart_items_list_fragment_tv_total_cost"
+                android:layout_width="@dimen/dim_100dp"
+                android:layout_height="@dimen/dim_100dp"
+                android:background="@drawable/shape_circle"
+                android:layout_marginTop="@dimen/dim_8dp"
+                android:textColor="@color/blue"
+                android:gravity="center"
+                android:textSize="@dimen/dim_16sp"
+                app:layout_constraintTop_toBottomOf="@id/cart_items_list_fragment_tv_total_cost_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="500rial"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_8dp"
+                android:weightSum="5"
+                android:gravity="center_horizontal"
+                app:layout_constraintTop_toBottomOf="@id/cart_items_list_fragment_tv_total_cost">
+
+                <Button
+                    android:id="@+id/cart_items_list_fragment_btn_confirm_order"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dim_40dp"
+                    android:layout_weight="2.2"
+                    android:background="@drawable/shape_button"
+                    android:textColor="@color/white"
+                    android:text="@string/confirm_order"
+                    android:layout_marginEnd="@dimen/dim_8dp"/>
+
+                <Button
+                    android:id="@+id/cart_items_list_fragment_btn_add_more"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dim_40dp"
+                    android:layout_weight="2.2"
+                    android:background="@drawable/shape_button"
+                    android:textColor="@color/white"
+                    android:text="@string/add_more"
+                    android:layout_marginStart="@dimen/dim_8dp"/>
+
+
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

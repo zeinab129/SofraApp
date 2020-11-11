@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dim_24sp"
+    tools:context=".view.fragment.homeCycle.client.RestaurantInformationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dim_20sp"
+            android:textColor="@color/blue"
+            android:text="@string/status"
+            android:layout_weight="45"/>
+
+        <TextView
+            android:id="@+id/restaurant_information_fragment_tv_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dim_20sp"
+            android:textColor="@color/blue"
+            android:layout_weight="55"
+            tools:text="@string/open"/>
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_1dp"
+        android:background="@color/gray"
+        android:layout_marginTop="@dimen/dim_4dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_8dp"
+        android:weightSum="100"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dim_20sp"
+            android:textColor="@color/blue"
+            android:text="@string/city"
+            android:layout_weight="45"/>
+
+        <TextView
+            android:id="@+id/restaurant_information_fragment_tv_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dim_20sp"
+            android:textColor="@color/blue"
+            android:layout_weight="55"
+            tools:text="Riad"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_1dp"
+        android:background="@color/gray"
+        android:layout_marginTop="@dimen/dim_4dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_8dp"
+        android:weightSum="100"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dim_20sp"
+            android:textColor="@color/blue"
+            android:text="@string/region"
+            android:layout_weight="45"/>
+
+        <TextView
+            android:id="@+id/restaurant_information_fragment_tv_region"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dim_20sp"
+            android:textColor="@color/blue"
+            android:layout_weight="55"
+            tools:text="Roda"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_1dp"
+        android:background="@color/gray"
+        android:layout_marginTop="@dimen/dim_4dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_8dp"
+        android:weightSum="100"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dim_20sp"
+            android:textColor="@color/blue"
+            android:text="@string/minimum_cost"
+            android:layout_weight="45"/>
+
+        <TextView
+            android:id="@+id/restaurant_information_fragment_tv_min_cost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dim_20sp"
+            android:textColor="@color/blue"
+            android:layout_weight="55"
+            tools:text="60 Rial"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_1dp"
+        android:background="@color/gray"
+        android:layout_marginTop="@dimen/dim_4dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_8dp"
+        android:weightSum="100"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dim_20sp"
+            android:textColor="@color/blue"
+            android:text="@string/delivery_cost"
+            android:layout_weight="45"/>
+
+        <TextView
+            android:id="@+id/restaurant_information_fragment_tv_delivery_cost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dim_20sp"
+            android:textColor="@color/blue"
+            android:layout_weight="55"
+            tools:text="10 Rial"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_1dp"
+        android:background="@color/gray"
+        android:layout_marginTop="@dimen/dim_4dp"/>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dim_24dp"
+    android:paddingBottom="@dimen/dim_24dp"
+    android:paddingStart="@dimen/dim_12dp"
+    android:paddingEnd="@dimen/dim_12dp"
+    android:layout_gravity="center"
+    android:background="@drawable/shape_item_restaurant"
+    android:backgroundTint="@color/gray"
+    android:id="@+id/dialog_review">
+
+
+    <TextView
+        android:id="@+id/dialog_restaurant_order_cancel_reason_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text1"
+        android:textStyle="bold"
+        android:textSize="@dimen/dim_24sp"
+        android:text="@string/rejection_reason"/>
+    
+
+    <EditText
+        android:id="@+id/dialog_restaurant_order_cancel_reason_et_reason"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_200dp"
+        android:background="@drawable/shape_store_image"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="@dimen/dim_12dp"
+        android:hint="@string/please_enter_rejection_reason_here"
+        android:textColor="@color/blue"
+        android:gravity="top"
+        android:padding="@dimen/dim_12dp"
+        android:layout_below="@id/dialog_restaurant_order_cancel_reason_tv_title"/>
+    
+    <Button
+        android:id="@+id/dialog_restaurant_order_cancel_reason_btn_cancel"
+        android:layout_width="@dimen/dim_150dp"
+        android:layout_height="@dimen/dim_40dp"
+        android:layout_marginTop="@dimen/dim_12dp"
+        android:layout_marginBottom="@dimen/dim_12dp"
+        android:background="@drawable/shape_button"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:layout_below="@id/dialog_restaurant_order_cancel_reason_et_reason"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+</RelativeLayout>

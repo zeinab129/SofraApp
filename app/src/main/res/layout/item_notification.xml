@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="@dimen/dim_12dp"
+    app:contentPaddingTop="@dimen/dim_12dp"
+    app:contentPaddingBottom="@dimen/dim_12dp"
+    app:contentPaddingLeft="@dimen/dim_8dp"
+    app:contentPaddingRight="@dimen/dim_8dp"
+    app:cardCornerRadius="@dimen/dim_12dp"
+    app:cardElevation="@dimen/dim_8dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/notification_item_iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_bell"
+            android:tint="@color/blue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/notification_item_tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dim_8dp"
+            android:layout_marginEnd="@dimen/dim_4dp"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/dim_14sp"
+            android:maxLines="1"
+            app:layout_constraintStart_toEndOf="@id/notification_item_iv_icon"
+            app:layout_constraintEnd_toStartOf="@id/notification_item_tv_date"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="notification"/>
+
+        <TextView
+            android:id="@+id/notification_item_tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dim_10sp"
+            android:textColor="@color/light_blue"
+            android:drawableTint="@color/light_blue"
+            android:drawablePadding="@dimen/dim_4dp"
+            android:drawableStart="@drawable/ic_clock"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="from 10 minutes"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

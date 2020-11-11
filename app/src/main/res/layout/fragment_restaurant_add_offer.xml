@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/dim_12dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.homeCycle.restaurant.RestaurantAddOfferFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/restaurant_add_offer_fragment_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_offer_image"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/dim_24sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/restaurant_add_offer_fragment_iv_image"
+                android:layout_width="@dimen/dim_120dp"
+                android:layout_height="@dimen/dim_100dp"
+                android:background="@drawable/shape_et_edit"
+                android:layout_marginTop="@dimen/dim_12dp"
+                android:src="@drawable/ic_placeholder"
+                app:layout_constraintTop_toBottomOf="@id/restaurant_add_offer_fragment_tv_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <EditText
+                android:id="@+id/restaurant_add_offer_fragment_et_offer_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_55dp"
+                android:layout_marginTop="@dimen/dim_12dp"
+                android:background="@drawable/shape_item_restaurant"
+                android:paddingStart="@dimen/dim_16dp"
+                android:paddingEnd="@dimen/dim_16dp"
+                android:textColor="@color/blue"
+                android:hint="@string/offer_name"
+                app:layout_constraintTop_toBottomOf="@id/restaurant_add_offer_fragment_iv_image"/>
+
+            <EditText
+                android:id="@+id/restaurant_add_offer_fragment_et_price"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_55dp"
+                android:layout_marginTop="@dimen/dim_8dp"
+                android:background="@drawable/shape_item_restaurant"
+                android:paddingStart="@dimen/dim_16dp"
+                android:paddingEnd="@dimen/dim_16dp"
+                android:textColor="@color/blue"
+                android:hint="@string/price"
+                app:layout_constraintTop_toBottomOf="@id/restaurant_add_offer_fragment_et_offer_name"/>
+
+            <EditText
+                android:id="@+id/restaurant_add_offer_fragment_et_offer_price"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_55dp"
+                android:layout_marginTop="@dimen/dim_8dp"
+                android:background="@drawable/shape_item_restaurant"
+                android:paddingStart="@dimen/dim_16dp"
+                android:paddingEnd="@dimen/dim_16dp"
+                android:textColor="@color/blue"
+                android:hint="@string/offer_price"
+                app:layout_constraintTop_toBottomOf="@id/restaurant_add_offer_fragment_et_price"/>
+
+
+
+
+            <EditText
+                android:id="@+id/restaurant_add_offer_fragment_et_offer_desc"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_120dp"
+                android:layout_marginTop="@dimen/dim_8dp"
+                android:background="@drawable/shape_item_restaurant"
+                android:paddingStart="@dimen/dim_20dp"
+                android:paddingEnd="@dimen/dim_20dp"
+                android:paddingTop="@dimen/dim_12dp"
+                android:paddingBottom="@dimen/dim_12dp"
+                android:textColor="@color/blue"
+                android:hint="@string/brief_description"
+                android:gravity="top"
+                app:layout_constraintTop_toBottomOf="@id/restaurant_add_offer_fragment_et_offer_price"/>
+
+
+            <LinearLayout
+                android:id="@+id/restaurant_add_offer_fragment_ll_date"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_55dp"
+                android:layout_marginTop="@dimen/dim_8dp"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/restaurant_add_offer_fragment_et_offer_desc">
+
+                <EditText
+                    android:id="@+id/restaurant_add_offer_fragment_et_date_from"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/dim_8dp"
+                    android:layout_marginEnd="@dimen/dim_8dp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/dim_12dp"
+                    android:drawablePadding="@dimen/dim_8dp"
+                    android:background="@drawable/shape_edit_text"
+                    android:drawableEnd="@drawable/ic_calendar"
+                    android:hint="@string/from"
+                    android:textColor="@color/blue"
+                    android:editable="false"/>
+
+                <EditText
+                    android:id="@+id/restaurant_add_offer_fragment_et_date_to"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/dim_8dp"
+                    android:layout_marginEnd="@dimen/dim_8dp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/dim_12dp"
+                    android:drawablePadding="@dimen/dim_8dp"
+                    android:background="@drawable/shape_edit_text"
+                    android:drawableEnd="@drawable/ic_calendar"
+                    android:hint="@string/to"
+                    android:textColor="@color/blue"
+                    android:editable="false"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/restaurant_add_offer_fragment_btn_add"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dim_50dp"
+                android:layout_marginTop="@dimen/dim_24dp"
+                android:layout_marginBottom="@dimen/dim_12dp"
+                android:background="@drawable/shape_button"
+                android:text="@string/add"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dim_16sp"
+                app:layout_constraintWidth_percent="0.6"
+                app:layout_constraintTop_toBottomOf="@id/restaurant_add_offer_fragment_ll_date"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

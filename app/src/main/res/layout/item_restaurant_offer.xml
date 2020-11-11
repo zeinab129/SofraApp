@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dim_150dp"
+    android:id="@+id/restaurant_offer_item_slr_item"
+    app:mode="same_level"
+    app:dragEdge="right">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dim_150dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageButton
+            android:id="@+id/restaurant_offer_item_ib_edit"
+            android:layout_width="@dimen/dim_40dp"
+            android:layout_height="@dimen/dim_40dp"
+            android:layout_marginEnd="@dimen/dim_4dp"
+            android:background="@null"
+            android:src="@drawable/ic_edit"/>
+        <ImageButton
+            android:id="@+id/restaurant_offer_item_ib_delete"
+            android:layout_width="@dimen/dim_40dp"
+            android:layout_height="@dimen/dim_40dp"
+            android:layout_marginEnd="@dimen/dim_4dp"
+            android:background="@null"
+            android:src="@drawable/ic_bin"/>
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dim_8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/restaurant_offer_item_iv_image"
+            android:layout_marginStart="@dimen/dim_n_50dp"
+            android:background="@drawable/shape_item_restaurant"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/dim_60dp"
+            android:paddingEnd="@dimen/dim_8dp"
+            android:paddingTop="@dimen/dim_8dp"
+            android:paddingBottom="@dimen/dim_8dp">
+
+            <TextView
+                android:id="@+id/restaurant_offer_item_tv_offer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dim_20sp"
+                android:textColor="@color/blue"
+                android:layout_marginEnd="@dimen/album_dp_4"
+                tools:text="ksacakcikeesnvksneukmkjniuniinihhyvtyvuibuksacakcikeesnvksneukmkjniuniinihhyvtyvuibuygvhbjlknlugyftrxdcfgvhbjnmkmnfgcdsxcfgvbhnjbvcdxrdcytfugihoveskvygvhbjlknlugyftrxdcfgvhbjnmkmnfgcdsxcfgvbhnjbvcdxrdcytfugihoveskv"/>
+
+        </RelativeLayout>
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/restaurant_offer_item_iv_image"
+            android:layout_width="@dimen/dim_120dp"
+            android:layout_height="@dimen/dim_120dp"
+            android:src="@drawable/kfc"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</com.chauthai.swipereveallayout.SwipeRevealLayout>

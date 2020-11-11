@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dim_120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_item_restaurant"
+    android:layout_marginTop="@dimen/dim_12sp"
+    android:id="@+id/item_review">
+
+
+    <ImageView
+        android:id="@+id/item_review_iv_imotion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:src="@drawable/ic_imo"
+        android:layout_marginEnd="@dimen/dim_8dp"/>
+
+    <TextView
+        android:id="@+id/item_review_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/dim_12dp"
+        android:layout_marginStart="@dimen/dim_16dp"
+        android:textSize="@dimen/dim_16sp"
+        tools:text="Mohamed"/>
+
+    <TextView
+        android:id="@+id/item_review_tv_comment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/dim_32dp"
+        android:layout_marginEnd="@dimen/dim_8dp"
+        android:layout_marginBottom="@dimen/dim_12dp"
+        android:textColor="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/item_review_iv_imotion"
+        app:layout_constraintTop_toBottomOf="@id/item_review_tv_name"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="weknfwelnfwlefmwelmflelkfwlekfji4ewnlkdnvfsefmeo;fm;semfefmlnelwemfklemfk.wemfkwe.fnw.ekfne.fnw.ksemfefmlnelwemfklemfk.wemfkwe.fnw.ekfne.fnw.ksemfefmlnelwemfklemfk.wemfkwe.fnw.ekfne.fnw.ksemfefmlnelwemfklemfk.wemfkwe.fnw.ekfne.fnw.k"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

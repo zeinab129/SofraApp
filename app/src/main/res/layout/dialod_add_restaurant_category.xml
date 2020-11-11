@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dim_16dp"
+    android:paddingBottom="@dimen/dim_16dp"
+    android:paddingStart="@dimen/dim_8dp"
+    android:paddingEnd="@dimen/dim_8dp"
+    android:layout_gravity="center"
+    android:background="@drawable/shape_item_restaurant"
+    android:backgroundTint="@color/gray"
+    android:id="@+id/dialog_review">
+
+    <TextView
+        android:id="@+id/dialog_add_restaurant_category_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/dim_20sp"
+        android:text="@string/category_image"
+        android:layout_centerHorizontal="true"/>
+    
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/dialog_add_restaurant_category_ib_category_image"
+        android:layout_width="@dimen/dim_100dp"
+        android:layout_height="@dimen/dim_100dp"
+        android:layout_below="@id/dialog_add_restaurant_category_tv_title"
+        android:layout_marginTop="12dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_circle"
+        android:src="@drawable/ic_plus_pink"/>
+    
+
+    <EditText
+        android:id="@+id/dialog_add_restaurant_category_et_name"
+        android:layout_below="@id/dialog_add_restaurant_category_ib_category_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_50dp"
+        android:layout_marginTop="@dimen/dim_24dp"
+        android:layout_marginEnd="@dimen/dim_24dp"
+        android:layout_marginStart="@dimen/dim_24dp"
+        android:padding="@dimen/dim_16dp"
+        android:textColor="@color/blue"
+        android:hint="@string/category_name"
+        android:background="@drawable/shape_edit_text"/>
+
+    <Button
+        android:id="@+id/dialog_add_restaurant_category_btn_add"
+        android:layout_width="@dimen/dim_150dp"
+        android:layout_height="@dimen/dim_35dp"
+        android:background="@drawable/shape_button"
+        android:backgroundTint="@color/pink_light"
+        android:layout_below="@id/dialog_add_restaurant_category_et_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dim_24dp"
+        android:layout_marginBottom="@dimen/dim_16dp"
+        android:text="@string/add"
+        android:textColor="@color/white"/>
+
+
+
+
+
+</RelativeLayout>

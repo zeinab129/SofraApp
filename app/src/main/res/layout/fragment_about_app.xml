@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_about_us"
+    android:paddingTop="@dimen/dim_16dp"
+    android:paddingBottom="@dimen/dim_16dp"
+    android:orientation="vertical"
+    tools:context=".view.fragment.homeCycle.more.AboutAppFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/who_s_us"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/dim_24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_16dp"
+        android:layout_marginStart="@dimen/dim_16dp"
+        android:layout_marginEnd="@dimen/dim_16dp"
+        app:contentPadding="@dimen/dim_12dp"
+        app:cardCornerRadius="@dimen/dim_16dp"
+        app:cardElevation="@dimen/dim_8dp">
+
+        <TextView
+            android:id="@+id/about_app_fragment_tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/dim_16sp"
+            android:textAlignment="center"
+            tools:text="mvmvk;m;avds;laf;lvsn;mvmvk;m;avds;laf;lvsn;mvmvk;m;avds;laf;lvsn;mvmvk;m;avds;laf;lvsn;mvmvk;m;avds;laf;lvsn;mvmvk;m;avds;laf;lvsn;mvmvk;m;avds;laf;lvsn;mvmvk;m;avds;laf;lvsn;mvmvk;m;avds;laf;lvsn;mvmvk;m;avds;laf;lvsn;mvmvk;m;avds;laf;lvsn;mvmvk;m;avds;laf;lvsn;"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

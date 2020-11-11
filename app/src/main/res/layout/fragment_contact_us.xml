@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dim_12dp"
+    tools:context=".view.fragment.homeCycle.more.ContactUsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/contact_us"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/dim_24sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/contact_us_fragment_et_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_60dp"
+                android:paddingStart="@dimen/dim_16dp"
+                android:paddingEnd="@dimen/dim_16dp"
+                android:background="@drawable/shape_item_restaurant"
+                android:layout_marginTop="@dimen/dim_16dp"
+                android:hint="@string/full_name"
+                android:textColor="@color/text1"
+                tools:text="Mohamed"/>
+
+            <EditText
+                android:id="@+id/contact_us_fragment_et_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_60dp"
+                android:paddingStart="@dimen/dim_16dp"
+                android:paddingEnd="@dimen/dim_16dp"
+                android:background="@drawable/shape_item_restaurant"
+                android:layout_marginTop="@dimen/dim_8dp"
+                android:hint="@string/email"
+                android:textColor="@color/text1" />
+
+            <EditText
+                android:id="@+id/contact_us_fragment_et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_60dp"
+                android:paddingStart="@dimen/dim_16dp"
+                android:paddingEnd="@dimen/dim_16dp"
+                android:background="@drawable/shape_item_restaurant"
+                android:layout_marginTop="@dimen/dim_8dp"
+                android:hint="@string/phone"
+                android:textColor="@color/text1" />
+
+            <EditText
+                android:id="@+id/contact_us_fragment_et_message_content"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_150dp"
+                android:padding="@dimen/dim_16dp"
+
+                android:background="@drawable/shape_item_restaurant"
+                android:layout_marginTop="@dimen/dim_8dp"
+                android:hint="@string/what_s_your_message"
+                android:textColor="@color/text1"
+                android:gravity="top"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dim_8dp">
+
+                <RadioButton
+                    android:id="@+id/contact_us_fragment_rb_complaining"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/complaining"
+                    android:background="@null"
+                    android:button="@drawable/ic_radio_on_btn"
+                    android:padding="@dimen/dim_4dp"
+                    android:textColor="@color/blue"/>
+
+                <RadioButton
+                    android:id="@+id/contact_us_fragment_rb_suggestion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/suggestion"
+                    android:background="@null"
+                    android:button="@drawable/ic_radio_off_btn"
+                    android:padding="@dimen/dim_4dp"
+                    android:textColor="@color/blue"/>
+
+                <RadioButton
+                    android:id="@+id/contact_us_fragment_rb_enquiry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enquiry"
+                    android:background="@null"
+                    android:button="@drawable/ic_radio_off_btn"
+                    android:padding="@dimen/dim_4dp"
+                    android:textColor="@color/blue"/>
+
+
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/contact_us_fragment_btn_send"
+                android:layout_width="@dimen/dim_150dp"
+                android:layout_height="@dimen/dim_45dp"
+                android:background="@drawable/shape_button"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dim_12dp"
+                android:layout_marginBottom="@dimen/dim_8dp"
+                android:textColor="@color/white"
+                android:text="@string/send"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    
+    
+
+
+</LinearLayout>

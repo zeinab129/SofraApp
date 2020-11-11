@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dim_150dp"
+    android:id="@+id/restaurant_item">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/restaurant_item_iv_image"
+        android:layout_marginStart="@dimen/dim_n_50dp"
+        android:background="@drawable/shape_item_restaurant"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/dim_55dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/restaurant_item_tv_rest_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text2"
+                android:textSize="@dimen/dim_16sp"
+                tools:text="Restaurant Name"/>
+
+            <TextView
+                android:id="@+id/restaurant_item_tv_rest_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/dim_16dp"
+                android:drawablePadding="@dimen/dim_4dp"
+                tools:text="Open"
+                tools:drawableStart="@drawable/ic_dot_green"/>
+
+            <LinearLayout
+                android:id="@+id/restaurant_item_ll_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/restaurant_item_tv_rest_name"
+                android:layout_marginTop="@dimen/dim_8dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/restaurant_item_ib_star1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_star_blue"
+                    android:background="@null"/>
+                <ImageButton
+                    android:id="@+id/restaurant_item_ib_star2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_star_blue"
+                    android:layout_marginStart="@dimen/dim_4dp"
+                    android:background="@null"/>
+                <ImageButton
+                    android:id="@+id/restaurant_item_ib_star3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_star_blue"
+                    android:layout_marginStart="@dimen/dim_4dp"
+                    android:background="@null"/>
+                <ImageButton
+                    android:id="@+id/restaurant_item_ib_star4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_star_blue"
+                    android:layout_marginStart="@dimen/dim_4dp"
+                    android:background="@null"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/restaurant_item_tv_min_order_cost"
+                android:layout_below="@id/restaurant_item_ll_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_8dp"
+                android:textSize="@dimen/dim_12sp"
+                tools:text="Minimum order cost: 20$"/>
+
+            <TextView
+                android:id="@+id/restaurant_item_tv_min_delivery_cost"
+                android:layout_below="@id/restaurant_item_tv_min_order_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dim_12sp"
+                android:layout_marginTop="@dimen/dim_8dp"
+                tools:text="Delivery cost: 8$"/>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/restaurant_item_iv_image"
+        android:layout_width="@dimen/dim_120dp"
+        android:layout_height="@dimen/dim_120dp"
+        android:src="@drawable/kfc"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

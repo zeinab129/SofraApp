@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/gray"
+    android:layout_height="@dimen/dim_80dp"
+    android:layoutDirection="ltr"
+    android:id="@+id/tool_bar_sub_view">
+
+    <ImageButton
+        android:id="@+id/tool_bar_ib_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@drawable/ic_cart"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/dim_12dp"
+        android:layout_marginBottom="@dimen/dim_12dp"/>
+
+    <ImageButton
+        android:id="@+id/tool_bar_ib_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@drawable/ic_notification"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/dim_12dp"
+        android:layout_marginBottom="@dimen/dim_12dp"/>
+
+    <TextView
+        android:id="@+id/tool_bar_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dim_12dp"
+        android:textColor="@color/text1"
+        android:textSize="@dimen/dim_20sp"
+        android:textStyle="bold"
+        tools:text="Title"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

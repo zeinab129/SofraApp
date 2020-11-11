@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dim_12dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_150dp"
+        android:background="@drawable/shape_item_restaurant"
+        android:layout_marginStart="-50dp"
+        android:paddingStart="@dimen/dim_55dp"
+        android:backgroundTint="@color/gray"
+        android:layout_toEndOf="@id/client_offer_item_iv_rest_image">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/client_offer_item_tv_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/dim_16sp"
+                android:textStyle="bold"
+                tools:text="get the offer now 20%" />
+
+            <Button
+                android:id="@+id/client_offer_item_btn_details"
+                android:layout_width="@dimen/dim_120dp"
+                android:layout_height="@dimen/dim_40dp"
+                android:layout_marginTop="@dimen/dim_8dp"
+                android:background="@drawable/shape_button"
+                android:textColor="@color/white"
+                android:text="@string/details"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/client_offer_item_iv_rest_image"
+        android:layout_width="@dimen/dim_100dp"
+        android:layout_height="@dimen/dim_100dp"
+        android:layout_centerVertical="true"
+        tools:src="@drawable/kfc"/>
+
+
+</RelativeLayout>

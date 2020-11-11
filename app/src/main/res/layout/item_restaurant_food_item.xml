@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout
+    android:id="@+id/restaurant_food_item_srl_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dim_4dp"
+    android:layout_marginEnd="@dimen/dim_4dp"
+    android:layout_marginStart="@dimen/dim_4dp"
+    android:background="@null"
+    app:mode="same_level"
+    app:dragEdge="right">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dim_100dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <ImageButton
+            android:id="@+id/restaurant_food_item_ib_edit"
+            android:layout_width="@dimen/dim_40dp"
+            android:layout_height="@dimen/dim_40dp"
+            android:layout_marginEnd="@dimen/dim_4dp"
+            android:background="@null"
+            android:src="@drawable/ic_edit"/>
+        <ImageButton
+            android:id="@+id/restaurant_food_item_ib_delete"
+            android:layout_width="@dimen/dim_40dp"
+            android:layout_height="@dimen/dim_40dp"
+            android:layout_marginEnd="@dimen/dim_4dp"
+            android:background="@null"
+            android:src="@drawable/ic_bin"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_100dp"
+        android:background="@drawable/shape_item_restaurant"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/restaurant_food_item_iv_food_item_image"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dim_8dp"
+            android:layout_marginBottom="@dimen/dim_8dp"
+            android:layout_marginStart="@dimen/dim_16dp"
+            tools:src="@drawable/kfc"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dim_8dp"
+            android:layout_weight="2"
+            android:weightSum="3">
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <TextView
+                    android:id="@+id/restaurant_food_item_tv_food_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/blue"
+                    tools:text="Chicken fries"/>
+
+                <TextView
+                    android:id="@+id/restaurant_food_item_tv_food_item_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/restaurant_food_item_tv_food_item_name"
+                    android:layout_marginTop="@dimen/dim_4dp"
+
+                    tools:text="The chicken fries recipe, the chicken fries recipe "/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/dim_8dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/restaurant_food_item_tv_food_item_price_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price"
+                    android:textColor="@color/blue"/>
+                <TextView
+                    android:id="@+id/restaurant_food_item_tv_food_item_price"
+                    android:layout_below="@id/restaurant_food_item_tv_food_item_price_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_4dp"
+                    android:textColor="@color/blue"
+                    tools:text="20Rial"/>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</com.chauthai.swipereveallayout.SwipeRevealLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.homeCycle.client.ClientEditProfileFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dim_12dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/client_edit_profile_fragment_ib_profile_image"
+                android:layout_width="@dimen/album_dp_100"
+                android:layout_height="@dimen/album_dp_100"
+                android:background="@drawable/shape_circle"
+                android:src="@drawable/ic_new_user"/>
+
+            <EditText
+                android:id="@+id/client_edit_profile_fragment_et_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_60dp"
+                android:background="@drawable/shape_et_edit"
+                android:drawableStart="@drawable/ic_user"
+                android:drawableTint="@color/blue"
+                android:textColor="@color/blue"
+                android:drawablePadding="@dimen/dim_8dp"
+                android:padding="@dimen/dim_12dp"
+                android:layout_marginTop="@dimen/dim_24dp"
+                tools:text="مازن محمد"/>
+
+            <EditText
+                android:id="@+id/client_edit_profile_fragment_et_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_60dp"
+                android:background="@drawable/shape_et_edit"
+                android:drawableStart="@drawable/ic_email"
+                android:drawableTint="@color/blue"
+                android:textColor="@color/blue"
+                android:drawablePadding="@dimen/dim_8dp"
+                android:padding="@dimen/dim_12dp"
+                android:layout_marginTop="@dimen/dim_12dp"
+                tools:text="kurishop@gmail.com"/>
+
+            <EditText
+                android:id="@+id/client_edit_profile_fragment_et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_60dp"
+                android:background="@drawable/shape_et_edit"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawableTint="@color/blue"
+                android:textColor="@color/blue"
+                android:drawablePadding="@dimen/dim_8dp"
+                android:padding="@dimen/dim_12dp"
+                android:layout_marginTop="@dimen/dim_12dp"
+                tools:text="01097163235"/>
+
+            <RelativeLayout
+                android:id="@+id/client_edit_profile_fragment_rl_city_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_60dp"
+                android:layout_marginTop="@dimen/dim_12dp"
+                android:padding="@dimen/dim_12dp"
+                android:background="@drawable/shape_et_edit"
+                app:layout_constraintTop_toBottomOf="@id/restaurant_edit_profile_fragment1_et_email">
+
+                <ImageView
+                    android:id="@+id/client_edit_profile_fragment_iv_city_sp_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_home"
+                    android:tint="@color/blue"
+                    android:layout_centerVertical="true"/>
+
+                <Spinner
+                    android:id="@+id/client_edit_profile_fragment_sp_city_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@id/client_edit_profile_fragment_iv_city_sp_icon"
+                    android:layout_toStartOf="@id/client_edit_profile_fragment_iv_city_sp_arrow"
+                    android:background="@null"
+                    android:padding="@dimen/dim_4dp"/>
+
+                <ImageView
+                    android:id="@+id/client_edit_profile_fragment_iv_city_sp_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_down_arrow"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/blue"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="@dimen/dim_4dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/client_edit_profile_fragment_rl_region_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_60dp"
+                android:layout_marginTop="@dimen/dim_12dp"
+                android:padding="@dimen/dim_12dp"
+                android:background="@drawable/shape_et_edit"
+                app:layout_constraintTop_toBottomOf="@id/restaurant_edit_profile_fragment1_rl_city_spinner">
+
+                <ImageView
+                    android:id="@+id/client_edit_profile_fragment_iv_region_sp_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_home"
+                    android:tint="@color/blue"
+                    android:layout_centerVertical="true"/>
+
+                <Spinner
+                    android:id="@+id/client_edit_profile_fragment_sp_region_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@id/client_edit_profile_fragment_iv_region_sp_icon"
+                    android:layout_toStartOf="@id/client_edit_profile_fragment_iv_region_sp_arrow"
+                    android:background="@null"
+                    android:padding="@dimen/dim_4dp"/>
+
+                <ImageView
+                    android:id="@+id/client_edit_profile_fragment_iv_region_sp_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_down_arrow"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/blue"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="@dimen/dim_4dp"/>
+
+            </RelativeLayout>
+
+
+
+
+            <Button
+                android:id="@+id/client_edit_profile_fragment_btn_edit"
+                android:layout_width="@dimen/dim_150dp"
+                android:layout_height="@dimen/dim_50dp"
+                android:background="@drawable/shape_button"
+                android:text="@string/edit"
+                android:textColor="@color/white"
+                android:layout_marginBottom="@dimen/dim_12dp"
+                android:layout_marginTop="@dimen/dim_12dp"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

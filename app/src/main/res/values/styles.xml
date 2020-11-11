@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+    </style>
+
+    <style name="bottom_navigation">
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_marginEnd">@dimen/dim_4dp</item>
+        <item name="android:layout_marginBottom">@dimen/dim_n_12dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/dim_10dp</item>
+        <item name="android:paddingBottom">@dimen/dim_10dp</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="bottom_navigation_select">
+        <item name="android:visibility">invisible</item>
+        <item name="android:layout_marginStart">@dimen/dim_24dp</item>
+        <item name="android:layout_marginEnd">@dimen/dim_24dp</item>
+        <item name="android:layout_marginBottom">@dimen/dim_4dp</item>
+        <item name="android:background">@color/gray_dark</item>
+    </style>
+
+
+    <style name="tv_more_style">tv_more_style
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/dim_20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">@dimen/dim_10dp</item>
+        <item name="android:layout_marginStart">@dimen/dim_10dp</item>
+    </style>
+
+
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">#E14D5F</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/white
+        </item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">#42221f1f
+        </item>
+    </style>
+</resources>

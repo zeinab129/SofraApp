@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragment.authCycle.LoginFragment"
+    android:background="@drawable/bg_layer1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_layer2">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/dim_32dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dim_50dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/dim_24sp"/>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_50dp"
+                    android:layout_marginTop="@dimen/dim_50dp"
+                    android:textColorHint="@color/white"
+                    android:hint="@string/email">
+
+                    <EditText
+                        android:id="@+id/login_fragment_et_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableStart="@drawable/ic_email"
+                        android:drawablePadding="@dimen/dim_8dp"
+                        android:textColor="@color/white"
+                        android:inputType="textEmailAddress"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_50dp"
+                    android:layout_marginTop="@dimen/dim_50dp"
+                    android:textColorHint="@color/white"
+                    android:hint="@string/password"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/white">
+
+                    <EditText
+                        android:id="@+id/login_fragment_et_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableStart="@drawable/ic_lock"
+                        android:drawablePadding="@dimen/dim_8dp"
+                        android:textColor="@color/white"
+                        android:inputType="textPassword"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/login_fragment_tv_forget_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_8dp"
+                    android:layout_gravity="end"
+                    android:textColor="@color/white"
+                    android:clickable="true"
+                    android:text="@string/do_you_forget_password"/>
+
+                <Button
+                    android:id="@+id/login_fragment_btn_login"
+                    android:layout_width="@dimen/dim_250dp"
+                    android:layout_height="@dimen/dim_50dp"
+                    android:background="@drawable/shape_button"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dim_50dp"
+                    android:layout_marginBottom="@dimen/dim_32dp"
+                    android:textColor="@color/white"
+                    android:text="@string/login"
+                    android:drawableEnd="@drawable/ic_login"
+                    android:paddingHorizontal="@dimen/dim_95dp"
+                    android:drawablePadding="@dimen/dim_1dp"/>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        l<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_32dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/gray_transparent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/don_t_have_account_click"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/login_fragment_tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/here"
+            android:clickable="true"
+            android:textColor="@color/text2"/>
+
+    </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
