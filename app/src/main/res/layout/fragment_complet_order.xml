@@ -290,7 +290,7 @@
                 <Button
                     android:id="@+id/complete_order_fragment_btn_refuse"
                     android:layout_width="0dp"
-                    android:layout_height="@dimen/dim_45dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:backgroundTint="@color/blue"
                     android:drawableEnd="@drawable/ic_cancle"
@@ -306,7 +306,7 @@
                 <Button
                     android:id="@+id/complete_order_fragment_btn_accept"
                     android:layout_width="0dp"
-                    android:layout_height="@dimen/dim_45dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@drawable/shape_et_edit"
                     android:backgroundTint="@color/green"
@@ -321,7 +321,7 @@
                 <Button
                     android:id="@+id/complete_order_fragment_btn_call"
                     android:layout_width="0dp"
-                    android:layout_height="@dimen/dim_45dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textColor="@color/white"
                     android:text="@string/call"

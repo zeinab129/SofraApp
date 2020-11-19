@@ -211,8 +211,8 @@ public class RestaurantReviewsFragment extends BaseFragment {
                     @Override
                     public void onResponse(Call<ClientReview> call, Response<ClientReview> response) {
                         try {
-                            Toast.makeText(getActivity(), response.body().getMsg(), Toast.LENGTH_SHORT).show();
                             if(response.body().getStatus() == 1){
+                                Toast.makeText(getActivity(), R.string.review_added_successfully, Toast.LENGTH_SHORT).show();
                                 dialog.dismiss();
                             }
                         } catch (Exception ex) {

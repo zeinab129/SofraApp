@@ -217,7 +217,7 @@
                 <Button
                     android:id="@+id/client_register_fragment_btn_register"
                     android:layout_width="@dimen/dim_250dp"
-                    android:layout_height="@dimen/dim_50dp"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/shape_button"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="@dimen/dim_50dp"

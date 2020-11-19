@@ -87,7 +87,7 @@
     <Button
         android:id="@+id/dialog_review_btn_add"
         android:layout_width="@dimen/dim_150dp"
-        android:layout_height="@dimen/dim_35dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/shape_button"
         android:layout_below="@id/dialog_review_et_comment"
         android:layout_centerHorizontal="true"

@@ -149,7 +149,7 @@
     <Button
         android:id="@+id/restaurant_edit_profile_fragment1_btn_continue"
         android:layout_width="0dp"
-        android:layout_height="@dimen/dim_50dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/shape_button"
         android:text="@string/continuee"
         android:textColor="@color/white"

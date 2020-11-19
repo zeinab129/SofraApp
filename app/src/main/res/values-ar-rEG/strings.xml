@@ -139,4 +139,6 @@
     <string name="ahly">الأهلي: </string>
     <string name="sofra">باسم سفرة</string>
     <string name="your_sharing_by_comment_or_review_makes_us_happy">يسعدنا مشاركتك بتعليق او تقييم</string>
+    <string name="review_added_successfully">تم اضافة التقيم بنجاح</string>
+
 </resources>

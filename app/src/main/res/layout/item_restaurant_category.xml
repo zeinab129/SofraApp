@@ -51,16 +51,21 @@
         android:background="@drawable/shape_item_restaurant"
         android:weightSum="3">
 
-        <ImageView
-            android:id="@+id/restaurant_category_item_iv_category_image"
+        <androidx.cardview.widget.CardView
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginTop="@dimen/dim_8dp"
             android:layout_marginBottom="@dimen/dim_8dp"
             android:layout_marginStart="@dimen/dim_16dp"
-            tools:src="@drawable/kfc"
-            android:scaleType="fitXY"/>
+            app:cardCornerRadius="@dimen/dim_12dp">
+            <ImageView
+                android:id="@+id/restaurant_category_item_iv_category_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:src="@drawable/kfc"
+                android:scaleType="fitXY"/>
+        </androidx.cardview.widget.CardView>
 
         <TextView
             android:id="@+id/restaurant_category_item_tv_category_name"

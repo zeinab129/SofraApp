@@ -46,7 +46,7 @@ public class RestaurantOrdersListAdapter extends RecyclerView.Adapter<Restaurant
     private BaseActivity activity;
     private List<RestaurantOrdersData> restaurantOrdersDataList = new ArrayList<>();
     private String lang;
-    public String state;
+    public String state = "pending";
     public static Dialog dialog;
 
     public RestaurantOrdersListAdapter(Context context, List<RestaurantOrdersData> restaurantOrdersDataList) {

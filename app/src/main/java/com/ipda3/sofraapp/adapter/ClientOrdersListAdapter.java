@@ -40,7 +40,7 @@ public class ClientOrdersListAdapter extends RecyclerView.Adapter<ClientOrdersLi
     private List<ClientOrdersData> clientOrdersDataList = new ArrayList<>();
     private String lang;
 
-    public  String state;
+    public  String state = "pending";
 
     public ClientOrdersListAdapter(Context context, List<ClientOrdersData> clientOrdersDataList) {
         this.context = context;

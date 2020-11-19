@@ -117,7 +117,7 @@
             <Button
                 android:id="@+id/contact_us_fragment_btn_send"
                 android:layout_width="@dimen/dim_150dp"
-                android:layout_height="@dimen/dim_45dp"
+                android:layout_height="wrap_content"
                 android:background="@drawable/shape_button"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="@dimen/dim_12dp"

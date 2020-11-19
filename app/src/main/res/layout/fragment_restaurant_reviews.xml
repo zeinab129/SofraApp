@@ -21,7 +21,7 @@
     <Button
         android:id="@+id/restaurant_reviews_fragment_btn_add_review"
         android:layout_width="@dimen/dim_250dp"
-        android:layout_height="@dimen/dim_45dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/shape_button"
         android:text="@string/add_comment_or_review"
         android:textColor="@color/white"

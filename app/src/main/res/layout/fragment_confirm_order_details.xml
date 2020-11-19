@@ -227,7 +227,7 @@
             <Button
                 android:id="@+id/confirm_order_details_fragment_btn_confirm_order"
                 android:layout_width="0dp"
-                android:layout_height="@dimen/dim_55dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dim_15dp"
                 android:layout_marginBottom="@dimen/dim_15dp"
                 android:background="@drawable/shape_button"

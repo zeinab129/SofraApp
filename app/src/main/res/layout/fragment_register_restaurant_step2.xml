@@ -77,19 +77,26 @@
                     android:textStyle="bold"
                     android:layout_marginTop="@dimen/dim_16dp"/>
 
-                <ImageButton
-                    android:id="@+id/register_restaurant_step2_fragment_ib_store_image"
-                    android:layout_width="@dimen/dim_80dp"
-                    android:layout_height="@dimen/dim_60dp"
-                    android:layout_marginTop="@dimen/dim_16dp"
-                    android:background="@drawable/shape_store_image"
-                    android:src="@drawable/ic_store"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/dim_12dp"
+                    android:layout_marginTop="@dimen/dim_16dp">
+
+                    <ImageButton
+                        android:id="@+id/register_restaurant_step2_fragment_ib_store_image"
+                        android:layout_width="@dimen/dim_80dp"
+                        android:layout_height="@dimen/dim_60dp"
+                        android:background="@null"
+                        android:src="@drawable/ic_store"/>
+
+                </androidx.cardview.widget.CardView>
 
 
                 <Button
                     android:id="@+id/register_restaurant_step2_fragment_btn_register"
                     android:layout_width="@dimen/dim_250dp"
-                    android:layout_height="@dimen/dim_50dp"
+                    android:layout_height="wrap_content"
                     android:background="@drawable/shape_button"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="@dimen/dim_50dp"

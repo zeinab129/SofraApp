@@ -42,7 +42,7 @@
     <Button
         android:id="@+id/dialog_restaurant_order_cancel_reason_btn_cancel"
         android:layout_width="@dimen/dim_150dp"
-        android:layout_height="@dimen/dim_40dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dim_12dp"
         android:layout_marginBottom="@dimen/dim_12dp"
         android:background="@drawable/shape_button"

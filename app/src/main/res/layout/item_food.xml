@@ -1,104 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:background="@drawable/shape_edit_text"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="@dimen/dim_12dp"
-    android:layout_height="@dimen/dim_250dp"
-    android:id="@+id/food_item">
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/dim_24dp">
 
-
-    <ImageView
-        android:id="@+id/food_item_iv_image"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:background="@drawable/shape_edit_text"
-        android:src="@drawable/kfc"
-        android:scaleType="fitXY"/>
+        android:layout_height="@dimen/dim_250dp"
+        android:id="@+id/food_item">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dim_120dp"
-        android:layout_alignParentBottom="true"
-        android:orientation="vertical"
-        android:padding="@dimen/dim_16dp"
-        android:gravity="center_vertical"
-        android:background="@drawable/shape_edit_text">
 
-        <TextView
-            android:id="@+id/food_item_tv_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/text1"
-            android:textSize="@dimen/dim_16sp"
-            tools:text="Name"/>
-
-        <TextView
-            android:id="@+id/food_item_tv_desc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/dim_12sp"
-            tools:text="Name"/>
+        <ImageView
+            android:id="@+id/food_item_iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_edit_text"
+            android:src="@drawable/kfc"
+            android:scaleType="fitXY"/>
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_120dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:padding="@dimen/dim_16dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/shape_edit_text">
 
             <TextView
+                android:id="@+id/food_item_tv_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/gray_dark"
+                android:textColor="@color/text1"
                 android:textSize="@dimen/dim_16sp"
-                android:text="@string/price"/>
-
-            <TextView
-                android:id="@+id/food_item_tv_price"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/gray_dark"
-                android:textSize="@dimen/dim_16sp"
-                tools:text="Name"
-                />
-
-            <TextView
-                android:id="@+id/food_item_tv_offer_price"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/dim_8dp"
-                android:textColor="@color/gray_dark"
-                android:textSize="@dimen/dim_16sp"
-                android:visibility="gone"
                 tools:text="Name"/>
 
             <TextView
+                android:id="@+id/food_item_tv_desc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/dim_4dp"
-                android:textColor="@color/gray_dark"
-                android:textSize="@dimen/dim_16sp"
-                android:text="@string/riel"
-                />
+                android:textSize="@dimen/dim_12sp"
+                tools:text="Name"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/dim_16sp"
+                    android:text="@string/price"/>
+
+                <TextView
+                    android:id="@+id/food_item_tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/dim_16sp"
+                    tools:text="Name"
+                    />
+
+                <TextView
+                    android:id="@+id/food_item_tv_offer_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_8dp"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/dim_16sp"
+                    android:visibility="gone"
+                    tools:text="Name"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dim_4dp"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/dim_16sp"
+                    android:text="@string/riel"
+                    />
+            </LinearLayout>
+
         </LinearLayout>
 
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/food_item_tv_special_offer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingStart="@dimen/dim_8dp"
-        android:paddingEnd="@dimen/dim_8dp"
-        android:paddingTop="@dimen/dim_4dp"
-        android:paddingBottom="@dimen/dim_4dp"
-        android:layout_marginTop="@dimen/album_dp_50"
-        android:text="Special offer"
-        android:textColor="@color/white"
-        android:textSize="@dimen/dim_12sp"
-        android:background="@drawable/shape_special_offer"
-        android:visibility="invisible"/>
+        <TextView
+            android:id="@+id/food_item_tv_special_offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dim_8dp"
+            android:paddingEnd="@dimen/dim_8dp"
+            android:paddingTop="@dimen/dim_4dp"
+            android:paddingBottom="@dimen/dim_4dp"
+            android:layout_marginTop="@dimen/album_dp_50"
+            android:text="Special offer"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dim_12sp"
+            android:background="@drawable/shape_special_offer"
+            android:visibility="invisible"/>
 
 
 
-</RelativeLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
