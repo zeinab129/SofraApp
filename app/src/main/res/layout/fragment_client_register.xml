@@ -38,7 +38,7 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/dim_50dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/dim_16dp"
                     android:textColorHint="@color/white"
                     android:hint="@string/name">
@@ -56,7 +56,7 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/dim_50dp"
+                    android:layout_height="wrap_content"
                     android:textColorHint="@color/white"
                     android:layout_marginTop="@dimen/dim_4dp"
                     android:hint="@string/email">
@@ -74,7 +74,7 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/dim_50dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/dim_16dp"
                     android:textColorHint="@color/white"
                     android:hint="@string/phone">
@@ -94,7 +94,7 @@
                 <RelativeLayout
                     android:id="@+id/client_register_fragment_rl_city_spinner"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/dim_50dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/dim_4dp"
                     android:padding="@dimen/dim_4dp">
 
@@ -135,7 +135,7 @@
                 <RelativeLayout
                     android:id="@+id/client_register_fragment_rl_region_spinner"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/dim_50dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/dim_4dp"
                     android:padding="@dimen/dim_4dp"
                     android:visibility="gone">
@@ -176,7 +176,7 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/dim_50dp"
+                    android:layout_height="wrap_content"
                     android:textColorHint="@color/white"
                     android:hint="@string/password"
                     app:passwordToggleTint="@color/white"
@@ -196,7 +196,7 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/dim_50dp"
+                    android:layout_height="wrap_content"
                     android:textColorHint="@color/white"
                     android:hint="@string/confirm_password"
                     app:passwordToggleTint="@color/white"

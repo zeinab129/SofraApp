@@ -27,7 +27,7 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/dim_50dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/dim_16dp"
                     android:textColorHint="@color/white"
                     android:hint="@string/restaurant_name">
@@ -45,7 +45,7 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/dim_50dp"
+                    android:layout_height="wrap_content"
                     android:textColorHint="@color/white"
                     android:layout_marginTop="@dimen/dim_4dp"
                     android:hint="@string/email">
@@ -63,7 +63,7 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/dim_50dp"
+                    android:layout_height="wrap_content"
                     android:textColorHint="@color/white"
                     android:layout_marginTop="@dimen/dim_4dp"
                     android:hint="@string/delivery_time">
@@ -81,7 +81,7 @@
                 <RelativeLayout
                     android:id="@+id/register_restaurant_step1_fragment_rl_city_spinner"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/dim_50dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/dim_4dp"
                     android:padding="@dimen/dim_4dp">
 
@@ -122,7 +122,7 @@
                 <RelativeLayout
                     android:id="@+id/register_restaurant_step1_fragment_rl_region_spinner"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/dim_50dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/dim_4dp"
                     android:padding="@dimen/dim_4dp"
                     android:visibility="gone">
@@ -163,7 +163,7 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/dim_50dp"
+                    android:layout_height="wrap_content"
                     android:textColorHint="@color/white"
                     android:hint="@string/password"
                     app:passwordToggleTint="@color/white"
@@ -183,7 +183,7 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/dim_50dp"
+                    android:layout_height="wrap_content"
                     android:textColorHint="@color/white"
                     android:hint="@string/confirm_password"
                     app:passwordToggleTint="@color/white"
@@ -203,7 +203,7 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/dim_50dp"
+                    android:layout_height="wrap_content"
                     android:textColorHint="@color/white"
                     android:hint="@string/minimum_order_cost"
                     android:layout_marginTop="@dimen/dim_4dp">
@@ -221,7 +221,7 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/dim_50dp"
+                    android:layout_height="wrap_content"
                     android:textColorHint="@color/white"
                     android:hint="@string/delivery_cost"
                     android:layout_marginTop="@dimen/dim_4dp">

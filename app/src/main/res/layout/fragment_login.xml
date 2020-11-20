@@ -36,7 +36,7 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/dim_50dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/dim_50dp"
                     android:textColorHint="@color/white"
                     android:hint="@string/email">
@@ -54,7 +54,7 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/dim_50dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/dim_50dp"
                     android:textColorHint="@color/white"
                     android:hint="@string/password"
