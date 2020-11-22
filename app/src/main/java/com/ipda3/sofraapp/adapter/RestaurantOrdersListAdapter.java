@@ -46,13 +46,14 @@ public class RestaurantOrdersListAdapter extends RecyclerView.Adapter<Restaurant
     private BaseActivity activity;
     private List<RestaurantOrdersData> restaurantOrdersDataList = new ArrayList<>();
     private String lang;
-    public String state = "pending";
+    public String state;
     public static Dialog dialog;
 
-    public RestaurantOrdersListAdapter(Context context, List<RestaurantOrdersData> restaurantOrdersDataList) {
+    public RestaurantOrdersListAdapter(Context context, List<RestaurantOrdersData> restaurantOrdersDataList, String state) {
         this.context = context;
         this.activity = (BaseActivity) context;
         this.restaurantOrdersDataList = restaurantOrdersDataList;
+        this.state = state;
         lang = "eg";
     }
 
@@ -76,12 +77,15 @@ public class RestaurantOrdersListAdapter extends RecyclerView.Adapter<Restaurant
         holder.restaurantOrderItemTvTotal.setText(restaurantOrdersDataList.get(position).getTotal());
         holder.restaurantOrderItemTvAddress.setText(restaurantOrdersDataList.get(position).getAddress());
 
-        if (state.equals("current")) {
+        if (state.equals("pending")) {
+            holder.restaurantOrderItemLlNewOrders.setVisibility(View.VISIBLE);
+            holder.restaurantOrderItemLlCurrentOrders.setVisibility(View.GONE);
+            holder.itemRestaurantOrderPreviousOrderTvOrderState.setVisibility(View.GONE);
+        } else if (state.equals("current")) {
             holder.restaurantOrderItemLlNewOrders.setVisibility(View.GONE);
             holder.restaurantOrderItemLlCurrentOrders.setVisibility(View.VISIBLE);
             holder.itemRestaurantOrderPreviousOrderTvOrderState.setVisibility(View.GONE);
-
-        } else if (state.equals("completed")) {
+        } else if (state.equals("complete")) {
             holder.restaurantOrderItemLlNewOrders.setVisibility(View.GONE);
             holder.restaurantOrderItemLlCurrentOrders.setVisibility(View.GONE);
             holder.itemRestaurantOrderPreviousOrderTvOrderState.setVisibility(View.VISIBLE);
@@ -93,10 +97,6 @@ public class RestaurantOrdersListAdapter extends RecyclerView.Adapter<Restaurant
                 holder.itemRestaurantOrderPreviousOrderTvOrderState.setBackgroundColor(activity.getResources().getColor(R.color.green));
                 holder.itemRestaurantOrderPreviousOrderTvOrderState.setText(R.string.order_completed);
             }
-        } else if (state.equals("pending")) {
-            holder.restaurantOrderItemLlNewOrders.setVisibility(View.VISIBLE);
-            holder.restaurantOrderItemLlCurrentOrders.setVisibility(View.GONE);
-            holder.itemRestaurantOrderPreviousOrderTvOrderState.setVisibility(View.GONE);
         }
 
     }

@@ -82,8 +82,7 @@ public class RestaurantOrdersFragment extends BaseFragment {
             }
         };
         restaurantOrdersFragmentRvOrdersList.addOnScrollListener(onEndLess);
-        restaurantOrdersListAdapter = new RestaurantOrdersListAdapter(getActivity(), restaurantOrdersDataList);
-        restaurantOrdersListAdapter.state = this.state;
+        restaurantOrdersListAdapter = new RestaurantOrdersListAdapter(getActivity(), restaurantOrdersDataList, state);
         restaurantOrdersFragmentRvOrdersList.setAdapter(restaurantOrdersListAdapter);
 
         getRestaurantOrdersList(1);

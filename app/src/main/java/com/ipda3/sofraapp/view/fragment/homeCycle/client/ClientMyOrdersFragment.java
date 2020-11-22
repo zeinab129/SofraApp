@@ -71,9 +71,7 @@ public class ClientMyOrdersFragment extends BaseFragment {
         clientMyOrderFragmentRvOrders.setLayoutManager(linearLayoutManager);
 
         clientOrdersDataList = new ArrayList<>();
-        clientOrdersListAdapter = new ClientOrdersListAdapter(getActivity(), clientOrdersDataList);
-
-        clientOrdersListAdapter.state = this.state;
+        clientOrdersListAdapter = new ClientOrdersListAdapter(getActivity(), clientOrdersDataList, state);
 
         onEndLess = new OnEndLess(linearLayoutManager, 1) {
             @Override
@@ -125,7 +123,7 @@ public class ClientMyOrdersFragment extends BaseFragment {
         onEndLess.current_page = 1;
         onEndLess.previous_page = 1;
         clientOrdersDataList = new ArrayList<>();
-        clientOrdersListAdapter = new ClientOrdersListAdapter(getActivity(), clientOrdersDataList);
+        clientOrdersListAdapter = new ClientOrdersListAdapter(getActivity(), clientOrdersDataList, state);
         clientMyOrderFragmentRvOrders.setAdapter(clientOrdersListAdapter);
     }
 
